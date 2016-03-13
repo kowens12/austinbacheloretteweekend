@@ -25,6 +25,17 @@
                                     <segue destination="Q9q-24-efL" kind="push" identifier="itinerarySegue" id="14k-Rg-Evy"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="AlO-7G-puK">
+                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AlO-7G-puK" id="6gc-lG-8q2">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="cn2-lR-gtJ" kind="push" identifier="aboutAustinSegue" id="vKp-Qk-y3N"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="Nox-tM-3Yb" id="95c-bB-Myb"/>
@@ -50,6 +61,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oOH-1p-wyO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6dy-NT-Nqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
