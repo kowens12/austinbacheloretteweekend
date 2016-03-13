@@ -14,13 +14,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainMenuItem" id="Vuf-KR-FYh">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="mainMenuItem" id="Vuf-KR-FYh">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vuf-KR-FYh" id="jsn-Tn-z6v">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Q9q-24-efL" kind="push" identifier="itinerarySegue" id="14k-Rg-Evy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,6 +36,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gwZ-X8-hM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1054" y="297"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0ia-Uf-J4D">
+            <objects>
+                <viewController id="cn2-lR-gtJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="26T-p8-aXE"/>
+                        <viewControllerLayoutGuide type="bottom" id="jZH-mC-brc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yxt-VG-S82">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dy-NT-Nqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508" y="624"/>
+        </scene>
+        <!--itineraryViewController-->
+        <scene sceneID="2L6-Tg-jDM">
+            <objects>
+                <viewController id="Q9q-24-efL" userLabel="itineraryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lip-yF-pva"/>
+                        <viewControllerLayoutGuide type="bottom" id="s1E-zW-0EW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R3D-of-20Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0rO-bc-7S6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CER-cV-Lfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1512" y="6"/>
         </scene>
     </scenes>
 </document>
